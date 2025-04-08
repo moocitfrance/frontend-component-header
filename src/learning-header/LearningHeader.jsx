@@ -35,9 +35,10 @@ const LearningHeader = ({
         </div>
         {showUserDropdown && authenticatedUser && (
         <>
-          <LearningHelpSlot />
+          {/* <LearningHelpSlot /> */}
           <AuthenticatedUserDropdown
             username={authenticatedUser.username}
+            avatar={authenticatedUser.avatar}
           />
         </>
         )}
